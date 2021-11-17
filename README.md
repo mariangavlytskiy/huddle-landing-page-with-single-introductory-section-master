@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/mariangavlytskiy/3-column-preview-card-component-main)
-- Live Site URL: [Live site URL](https://mariangavlytskiy.github.io/3-column-preview-card-component-main/)
+- Solution URL: [Solution URL](https://github.com/mariangavlytskiy/huddle-landing-page-with-single-introductory-section-master)
+- Live Site URL: [Live site URL](https://mariangavlytskiy.github.io/huddle-landing-page-with-single-introductory-section-master/)
 
 ## My process
 
