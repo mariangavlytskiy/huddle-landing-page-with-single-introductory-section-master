@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --white: hsl(0, 0%, 100%);
+
+    --header-and-footer-heght: 15rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    color: var(--white);
+    font-size: 14px;
+
+}
+
+body {
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    padding: 2.5rem;
+}
+
+header, main, footer, img, button {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+h1 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.9em;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.container,
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    max-width: 13rem;
+}
+
+.info h1 {
+    margin: 4rem 0 0;
+}
+
+.info p {
+    margin: 2rem 0;
+    opacity: 0.8;
+}
+.btn-primary {
+    border: none;
+    border-radius: 20px;
+    padding: 1rem 4rem;
+    color: var(--violet);
+    max-width: 250px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--soft-magenta);
+    color: var(--white);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+}
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    width: 36px;
+    height: 36px;
+    font-size: 1.2em;
+}
+
+.social-icons a:hover,
+.social-icons a:active {
+    color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: var(--soft-magenta); }
+
+
+@media only screen and (min-width: 1025px) {
+    html {
+        font-size: 16px;
+    }
+    .container {
+        flex-direction: row;
+        margin: 2rem 0;
+        max-height: calc(100vh - var(--header-and-footer-heght));
+    }
+
+    .illustration {
+        max-height: inherit;
+    }
+
+    .info {
+        align-self: flex-start;
+        align-items: flex-start;
+        flex-basis: 50%;
+        margin: 2rem 2rem 3rem;
+    }
+
+    .info h1 { 
+        margin: 0;
+    }
+
+    .info h1, .info p {
+        text-align: start;
+    }
+
+    .social-icons {
+        justify-content: flex-end;
+    }
+}
